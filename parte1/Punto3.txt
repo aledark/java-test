@@ -1,0 +1,27 @@
+/*
+*
+*	a. What endpoints and methods would you enable for creation, reading, modification and deletion?
+*		In the case of endpoints, the following will be defined for each model:
+*
+*		GET /consessionaires
+*		GET /consessionaires?id=1
+*		POST /consessionaires
+*		PUT /consessionaires/1
+*
+*   		GET for reading resources.
+*   		POST or PUT for creating new resources.
+*   		PUT and PATCH for updating existing resources.
+*		DELETE for deleting existing resources.
+*
+*		For DELETE type operations we have to be very careful given the nature of the relationships, 
+*		so other methods are needed to validate that it is done correctly.
+*
+*
+*	b. How can be a hierarchical access to enable the front-end for querying devices belonging to a specific bus?
+*	
+*		First, we must know which bus we want to query the devices from -> GET /buses
+*		Having the clarity, we can use -> GET /devices?busId=2
+*		Then, the hierarchical access consists of buses->devices
+*	
+*
+*/
